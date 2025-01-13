@@ -18,4 +18,12 @@ public:
 	/** The speed to set when the character is sprinting */
 	UPROPERTY(Category="Character Movement: Walking", EditAnywhere, BlueprintReadWrite, meta=(ClampMin="0", UIMin="0", ForceUnits="cm/s"))
 	float MaxWalkSpeedSprinting;
+	
+	/** The speed to set when the character is walking */
+	UPROPERTY(Category="Character Movement: Walking", EditAnywhere, BlueprintReadWrite, meta=(ClampMin="0", UIMin="0", ForceUnits="cm/s"))
+	float BaseWalkSpeed;
+
+	/** Increases the jump height after sprinting */
+	UPROPERTY(Category="Character Movement: Jumping", EditAnywhere, BlueprintReadWrite, meta=(ClampMin="0", UIMin="0"))
+	float SprintJumpMultiplier;
 };
