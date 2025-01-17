@@ -24,6 +24,10 @@ public:
 	float BaseWalkSpeed;
 
 	/** Increases the jump height after sprinting */
+	UPROPERTY(Category="Character Movement: Walking", EditAnywhere, BlueprintReadWrite, meta=(ClampMin="0", UIMin="0"))
+	bool isSprinting;
+
+	/** Increases the jump height after sprinting */
 	UPROPERTY(Category="Character Movement: Jumping", EditAnywhere, BlueprintReadWrite, meta=(ClampMin="0", UIMin="0"))
 	float SprintJumpMultiplier;
 };
